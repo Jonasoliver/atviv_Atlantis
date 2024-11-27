@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f3f7f7; /* Cor de fundo clara para remeter a areia */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 70%;
+  }
+}
+
+/* Título principal da seção */
+.sub {
+  color: #0077b6;  /* Azul claro do céu */
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Descrição das acomodações */
+.desc {
+  color: #2c3e50;  /* Cor escura para contraste */
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding: 0 10%;
+}
+
+/* Estilo da seção de acomodações */
+.acomodacao-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  gap: 20px;  /* Adiciona um espaçamento entre os itens */
+}
+
+/* Estilo individual das acomodações */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombras suaves para dar profundidade */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Levanta o bloco */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card img {
+  border-radius: 15px; /* Borda arredondada nas imagens */
+  width: 100%;
+  height: 300px; /* Imagens agora maiores */
+  object-fit: cover; /* Assegura que a imagem cubra bem o espaço sem distorcer */
+}
+
+.titulo {
+  color: #0077b6;  /* Azul claro para os títulos */
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sub {
+    font-size: 2.2rem; /* Tamanho reduzido do título em telas pequenas */
+  }
+
+  .card img {
+    height: 200px; /* Menor altura de imagem para telas pequenas */
+  }
+}
+
+@media (max-width: 500px) {
+  .sub {
+    font-size: 1.8rem; /* Ajuste maior para telas muito pequenas */
+  }
+}

@@ -1,0 +1,72 @@
+/* listaGeral.css */
+
+/* Modal Header */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.modal-title {
+    color: #343a40;
+    font-weight: 600;
+}
+
+/* Modal Body */
+.modal-body {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Títulos dos campos */
+.form-titulo {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #343a40;
+}
+
+/* Estilo dos campos de texto */
+.input-group .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos botões */
+.btn-outline-primary {
+    background-color: #001e3b;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    font-size: 16px;
+}
+
+.btn-outline-danger {
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+.btn-outline-secondary {
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+/* Estilo das opções do select */
+.form-select {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Footer */
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 2px solid #e0e0e0;
+}

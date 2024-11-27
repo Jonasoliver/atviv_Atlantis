@@ -1,0 +1,119 @@
+/* navbar.css */
+
+/* Estilo geral da Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background: linear-gradient(135deg, #66aaff, #99d9d9); /* Gradiente azul claro e turquesa */
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar img.logo {
+    width: 70px; /* Logo com um tamanho maior */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar img.logo:hover {
+    transform: rotate(360deg); /* Efeito de rotação suave ao passar o mouse */
+}
+
+/* Links de navegação */
+.navbar a.nav-link {
+    color: #ffffff !important; /* Texto branco para contraste */
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+/* Efeito de hover nos links */
+.navbar a.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito de fundo suave */
+    transform: translateY(-5px); /* Efeito de elevação */
+    color: #ffcc66; /* Cor dourada para contraste e sofisticação */
+}
+
+/* Dropdown */
+.navbar .nav-item.dropdown .nav-link {
+    position: relative;
+    padding-right: 35px;
+}
+
+.navbar .nav-item.dropdown .dropdown-menu {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilo dos itens do Dropdown */
+.navbar .nav-item.dropdown .dropdown-item {
+    color: #008080; /* Cor turquesa para os itens */
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Efeito de Hover nos itens do Dropdown */
+.navbar .nav-item.dropdown .dropdown-item:hover {
+    background-color: #008080; /* Cor turquesa para o fundo ao passar o mouse */
+    color: white;
+}
+
+/* Menu de navegação em dispositivos móveis */
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Estilo do ícone do toggler */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .navbar .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .navbar .logo {
+        margin-bottom: 15px;
+    }
+}

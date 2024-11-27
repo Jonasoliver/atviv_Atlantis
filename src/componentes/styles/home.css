@@ -1,0 +1,145 @@
+/* home.css */
+
+/* Resetando os estilos de lista */
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Centraliza as listas */
+}
+
+/* Título da página */
+.titulo-home {
+  color: #0077b6;  /* Azul claro para título */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem; /* Tamanho maior do título */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;  /* Centraliza a navbar */
+  align-items: center;
+  background-color: #66b3ff; /* Azul claro da praia */
+  padding: 10px 20px;
+}
+
+.navbar img {
+  width: 5vw; /* Garantindo que a logo não fique gigante */
+  height: auto; /* Para manter a proporção da imagem */
+}
+
+/* Subtítulo da página */
+.subtitulo-home {
+  color: #00b3b3; /* Cor turquesa */
+  text-align: center; /* Centraliza o texto */
+  margin: 2%;
+  font-size: 1.5rem;
+}
+
+/* Estilo para as seções de recursos, informações, benefícios, e contatos */
+.recursos,
+.informacoes,
+.beneficios,
+.contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza os itens nas seções */
+  align-items: center; /* Garante que tudo dentro da seção também será centralizado */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto; /* Centraliza as seções */
+  width: 80%; /* Controla a largura para centralizar */
+  text-align: center; /* Centraliza o conteúdo dentro das seções */
+}
+
+/* Títulos das seções */
+.titulo-recursos,
+.titulo-informacoes,
+.titulo-beneficios,
+.titulo-contatos {
+  color: #0077b6; /* Azul claro para os títulos */
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem; /* Tamanho maior para os títulos */
+  text-align: center; /* Centraliza os títulos */
+}
+
+/* Descrições das seções */
+.descricao-home,
+.descricao-informacoes {
+  color: #333333; /* Texto escuro para boa leitura */
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; /* Centraliza as descrições */
+  width: 80%; /* Controla a largura para centralizar */
+  margin-top: 10px;
+}
+
+/* Listagem de recursos, benefícios e contatos */
+.lista-recursos,
+.lista-beneficios,
+.lista-contatos {
+  color: #333333; /* Texto escuro para boa leitura */
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; /* Centraliza as listas */
+}
+
+/* Estilo dos links de navegação */
+.nav-link {
+  color: #0077b6; /* Azul claro para os links */
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 5px auto; /* Centraliza o link na navbar */
+}
+
+/* Efeito de hover nos links da navbar */
+.navbar a.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efeito de fundo suave */
+  transform: translateY(-5px); /* Efeito de elevação */
+  color: #ffcc66; /* Cor dourada para destaque ao passar o mouse */
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  /* Ajuste da navbar para dispositivos móveis */
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  /* Subtítulo com tamanho de fonte menor em telas menores */
+  .subtitulo-home {
+    font-size: 1.3rem;
+  }
+
+  /* Ajustando as margens das listas para melhor alinhamento */
+  .lista-recursos,
+  .lista-beneficios,
+  .lista-contatos {
+    margin-left: 0; /* Remove a margem lateral */
+    margin-top: 10px; /* Adiciona espaço entre os itens */
+  }
+
+  .titulo-recursos,
+  .titulo-informacoes,
+  .titulo-beneficios,
+  .titulo-contatos {
+    margin-left: 0; /* Remove a margem lateral */
+    font-size: 1.8rem; /* Tamanho ajustado */
+  }
+
+  .descricao-home,
+  .descricao-informacoes {
+    font-size: 1.1rem; /* Ajuste do tamanho do texto */
+  }
+}

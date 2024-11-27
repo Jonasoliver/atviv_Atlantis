@@ -1,0 +1,209 @@
+/* Configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+  background-color: #f4f7fb; /* Cor de fundo suave */
+  color: #333; /* Cor de texto */
+}
+
+/* Container principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal do formulário */
+.form-titulo {
+  font-size: 2rem; /* Menor tamanho para título */
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Modificar o tamanho dos títulos dos modais para evitar sobrecarga visual */
+.modal-title {
+  font-size: 1.5rem; /* Títulos mais ajustados */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Campos de entrada (form-control) */
+.form-control {
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.form-control:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+  outline: none;
+}
+
+/* Campo de seleção (form-select) */
+.form-select {
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Botões */
+.btn {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 12px 25px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-outline-secondary {
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  color: white;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.btn-outline-danger {
+  background-color: #e74c3c;
+  border: 2px solid #e74c3c;
+  color: white;
+}
+
+.btn-outline-danger:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Linhas horizontais */
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/* Estilo para os campos repetitivos (Documentos, Telefones) */
+.mb-3 {
+  margin-bottom: 25px;
+}
+
+/* Formatação do botão de enviar */
+.botaoEnviar {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.botaoEnviar button {
+  font-size: 1.2rem;
+}
+
+/* Estilos para o checkbox */
+.form-check-label {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Adicionar ícones de ajuda */
+.form-control::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Efeitos de foco nos campos do formulário */
+input:focus, select:focus {
+  background-color: #f9f9f9;
+  border-color: #2980b9;
+}
+
+input:disabled, select:disabled {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+/* Estilo para os ícones do botão de excluir */
+button.btn-outline-danger {
+  border-radius: 50%;
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.btn-outline-danger:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Efeito de transição nos botões */
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+
+  .form-titulo {
+      font-size: 1.8rem; /* Ajuste do título para telas menores */
+  }
+
+  .form-label {
+      font-size: 0.95rem; /* Reduzindo o tamanho da label para telas menores */
+  }
+
+  .form-control, .form-select {
+      font-size: 0.95rem; /* Ajuste de fonte nos campos */
+  }
+
+  .btn {
+      font-size: 1rem; /* Ajuste do tamanho do botão */
+      padding: 10px 20px;
+  }
+
+  .modal-title {
+      font-size: 1.4rem; /* Ajuste do título do modal para telas pequenas */
+  }
+}

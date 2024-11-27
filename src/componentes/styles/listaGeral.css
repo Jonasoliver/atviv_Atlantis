@@ -1,0 +1,208 @@
+.custom-link {
+    text-decoration: none !important; 
+    color: inherit !important; 
+}
+
+.custom-link:hover {
+    background-color: transparent !important;
+}
+
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.subtitulo {
+  font-weight: 600 ;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.botao-comprar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  color: white; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #6363fa;
+  width: 120px
+} 
+
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.increment-btn, .decrement-btn {
+  width: 50px !important;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4097fe;
+  background-color: #f3f9ff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.increment-btn, .decrement-btn:hover {
+    background-color: #f3f9ff;
+}
+
+.count {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #F5F8FB;
+  border-right: 1px solid #F5F8FB;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+  position: relative;
+  flex: 0;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+
+/* Encapsulando o estilo do modal para não afetar o formulário global */
+
+/* Modal container */
+.modal-form-container {
+  padding: 20px;
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #001e3b;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/* Estilo dos campos de seleção e inputs */
+.modal-form-titulo {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #001e3b;
+  margin-bottom: 10px;
+}
+
+.modal-form-select,
+.modal-form-control {
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-form-select:focus,
+.modal-form-control:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.6);
+  outline: none;
+}
+
+/* Botões de adicionar/remover cliente */
+.modal-add-button,
+.modal-remove-button {
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-add-button {
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  color: white;
+}
+
+.modal-add-button:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.modal-remove-button {
+  background-color: #e74c3c;
+  border: 1px solid #e74c3c;
+  color: white;
+  border-radius: 50%;
+  padding: 6px 12px;
+  transition: transform 0.2s ease;
+}
+
+.modal-remove-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Botão de confirmação */
+.modal-footer-button {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 12px 25px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-footer-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Estilo dos campos de cliente no modal */
+.modal-clientes-container {
+  margin-bottom: 15px;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  .modal-title {
+      font-size: 1.3rem; /* Ajuste do tamanho do título */
+  }
+
+  .modal-form-titulo {
+      font-size: 1rem;
+  }
+
+  .modal-form-select,
+  .modal-form-control {
+      font-size: 0.95rem;
+  }
+
+  .modal-add-button {
+      padding: 8px 18px;
+      font-size: 1rem;
+  }
+
+  .modal-footer-button {
+      font-size: 1rem;
+  }
+}
